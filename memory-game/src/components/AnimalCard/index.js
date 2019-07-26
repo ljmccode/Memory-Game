@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./animalCard.css";
 
 function AnimalCard(props) {
   return (
