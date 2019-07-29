@@ -1,50 +1,62 @@
 [
     {
       "id": 1,
+      "name": "raccoon",
       "image": "https://richmondsfblog.com/wp-content/uploads/2013/06/raccoon.jpg"
     },
     {
       "id": 2,
+      "name": "pig",
       "image": "https://laughtard.com/wp-content/uploads/2017/06/aaff8cdc99f7bec59b49ad1627071f75.jpg"
     },
     {
       "id": 3,
+      "name": "elephant",
       "image": "https://akns-images.eonline.com/eol_images/Entire_Site/201438/rs_560x415-140408154504-1024.baby-elephant-grass.ls.4814.jpg?fit=inside|900:auto&output-quality=90"
     },
     {
       "id": 4,
+      "name": "tiger",
       "image": "https://myspace.ge/file/pic/photo/2017/05/70be5b728a777fa68deab6f9e156f24f.jpg"
     },
     {
       "id": 5,
+      "name": "red-panda",
       "image": "https://i.redd.it/a7scjaz403411.png"
     },
     {
       "id": 6,
+      "name": "kitten",
       "image": "https://timesofindia.indiatimes.com/thumb/msid-68523832,width-800,height-600,resizemode-4/68523832.jpg"
     },
     {
       "id": 7,
+      "name": "bunny",
       "image": "https://i.imgur.com/yHKvxnZ.jpg"
     },
     {
       "id": 8,
+      "name": "puppy",
       "image": "http://38.media.tumblr.com/6f8b6d4cde2783704255e53e7c200f9a/tumblr_ndlhvr00Ni1sr68wbo1_1280.jpg"
     },
     {
       "id": 9,
+      "name": "mouse",
       "image": "https://cdn.thedesigninspiration.com/wp-content/uploads/2009/09/cute-animals/baby01.jpg"
     },
     {
       "id": 10,
+      "name": "hippo",
       "image": "https://vindy.media.clients.ellingtoncms.com/img/news/tease/2017/05/31/APTOPIX_Zoo_Baby_Hipp_Mill_1.jpg"
     },
     {
       "id": 11,
+      "name": "monkey",
       "image": "https://wallpapercave.com/wp/m3EEth2.jpg"
     },
     {
       "id": 12,
+      "name": "lion",
       "image": "https://data.whicdn.com/images/196027783/large.jpg"
     }
   ]

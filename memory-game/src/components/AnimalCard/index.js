@@ -3,7 +3,7 @@ import "./animalCard.css";
 
 function AnimalCard(props) {
   return (
-    <div className="card" onClick={() => props.ClickCount(props.id)}>
+    <div className="card" onClick={props.animalClick}>
       <div className="img-container">
         <img alt={props.name} src={props.image} />
       </div>

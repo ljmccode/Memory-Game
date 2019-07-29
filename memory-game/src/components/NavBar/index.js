@@ -8,8 +8,7 @@ class Navbar extends React.Component {
                 <ul>
                     <li className="gameName">Cuteness Memory Game</li>
                     <li className="middleNav"></li>
-                    <li className="score">Score: {this.props.score} |</li>
-                    <li className="highScore">High Score: {this.props.highscore}</li>
+                    <li className="score">Score: {this.props.score}</li>
                 </ul>
             </nav>
         );
