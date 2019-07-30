@@ -7,12 +7,14 @@ import "./App.css";
 
 let animalsClicked= [];
 let score= 0;
+let instructions= "Click on an image to earn points, but don't click any image twice!"
 
 class App extends Component {
     state = {
         animals,
         animalsClicked,
-        score
+        score,
+        instructions
     };
 
     // event for clicking on animal, determining if clicking animal again
@@ -30,8 +32,8 @@ class App extends Component {
                 }),
                 animalsClicked: [],
                 score: 0,
+                instructions: "Uh oh! You've already picked the adorable " + thisAnimal  + "! Play again?"
             });
-            alert("You've already picked the adorable "+ thisAnimal  + "! Play again?")
         } else {
             this.setState({
                 animals: this.state.animals.sort(function(a, b) {
@@ -39,18 +41,19 @@ class App extends Component {
                 }),
                 // add this animal to animalsClicked array
                 animalsClicked: this.state.animalsClicked.concat(thisAnimal),
-                score: this.state.score + 1
+                score: this.state.score + 1,
+                instructions: "Good job! Click another baby animal!"
             }, 
             // if all baby animals are click and game is won
             () => {
                 if (this.state.score === 12) {
-                    alert("You've click on all the cutie pies! Congrats!");
                     this.setState({
                         animals: this.state.animals.sort(function(a, b) {
                             return 0.5 - Math.random();
                         }),
                         animalsClicked: [],
-                        score: 0
+                        score: 0,
+                        instructions: "You've click on all the cutie pies! Congrats!"
                     })
                 }
             }
@@ -66,7 +69,7 @@ class App extends Component {
                     score={this.state.score}
                 />
                 <Wrapper>
-                    <h1 className="instructions">Click on an image to earn points, but don't click on any more than once!</h1>
+                    <h1 className="instructions">{this.state.instructions}</h1>
                     {this.state.animals.map(animal => (
                         <AnimalCard
                             animalClick= {this.animalClick}
